@@ -1,0 +1,126 @@
+\doxysection{player.\+Player Class Reference}
+\hypertarget{classplayer_1_1_player}{}\label{classplayer_1_1_player}\index{player.Player@{player.Player}}
+
+
+Klasa reprezentujaca gracza.  
+
+
+Inheritance diagram for player.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplayer_1_1_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplayer_1_1_player_ae3630ecbed83af189c8467d7ae430de0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pos, health\+\_\+upgrade, cowboy, hawaii, queen)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classplayer_1_1_player_a5899e9d3587b441aae79c436d311ed59}{move}} (self, key)
+\begin{DoxyCompactList}\small\item\em Metoda zmieniajaca pozycje gracza. \end{DoxyCompactList}\item 
+\Hypertarget{classplayer_1_1_player_ae385e3d8c7dc505870f6250ccf6eb1f3}\label{classplayer_1_1_player_ae385e3d8c7dc505870f6250ccf6eb1f3} 
+{\bfseries update} (self)
+\begin{DoxyCompactList}\small\item\em Metoda aktualizujaca atrybut rectangle gracza ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplayer_1_1_player_ad635139b6da6d2c0bd51bc6c4de1a18b}\label{classplayer_1_1_player_ad635139b6da6d2c0bd51bc6c4de1a18b} 
+{\bfseries x}
+\item 
+\Hypertarget{classplayer_1_1_player_afb11c521cfb45e01e79d86139c051159}\label{classplayer_1_1_player_afb11c521cfb45e01e79d86139c051159} 
+{\bfseries y}
+\item 
+\Hypertarget{classplayer_1_1_player_ac3a2325d576ac612ed8b00f0f61fe55b}\label{classplayer_1_1_player_ac3a2325d576ac612ed8b00f0f61fe55b} 
+{\bfseries image}
+\item 
+\Hypertarget{classplayer_1_1_player_a6870facb96e50fe33af1071506c67c69}\label{classplayer_1_1_player_a6870facb96e50fe33af1071506c67c69} 
+{\bfseries rect}
+\item 
+\Hypertarget{classplayer_1_1_player_af64c11e88c76c50a8f13bbaa326df40a}\label{classplayer_1_1_player_af64c11e88c76c50a8f13bbaa326df40a} 
+{\bfseries mask}
+\item 
+\Hypertarget{classplayer_1_1_player_a5b5da7829384b6720ab2d95836c8810a}\label{classplayer_1_1_player_a5b5da7829384b6720ab2d95836c8810a} 
+{\bfseries speed}
+\item 
+\Hypertarget{classplayer_1_1_player_a608651bee00f736b391675763aa9916f}\label{classplayer_1_1_player_a608651bee00f736b391675763aa9916f} 
+{\bfseries lives}
+\item 
+\Hypertarget{classplayer_1_1_player_a51ea6fc70c64598c7ffd554eb9afc47b}\label{classplayer_1_1_player_a51ea6fc70c64598c7ffd554eb9afc47b} 
+{\bfseries bullets}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classplayer_1_1_player_a86e6a8124c6a3951a3eb60e004a1711e}{\+\_\+shoot}} (self, speed\+\_\+upgrade)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca pocisk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca gracza. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classplayer_1_1_player_ae3630ecbed83af189c8467d7ae430de0}\label{classplayer_1_1_player_ae3630ecbed83af189c8467d7ae430de0} 
+\index{player.Player@{player.Player}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily player.\+Player.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos,  }\item[{}]{health\+\_\+upgrade,  }\item[{}]{cowboy,  }\item[{}]{hawaii,  }\item[{}]{queen }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & startowa pozycja \\
+\hline
+{\em health\+\_\+upgrade} & posiadane ulepszenie punktow zycia \\
+\hline
+{\em cowboy} & informacja czy kostium kowboja zostal zalozony \\
+\hline
+{\em hawaii} & informacja czy kostium wakacyjny zostal zalozony ~\newline
+ \\
+\hline
+{\em queen} & informacja czy kostium krolowej zostal zalozony \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classplayer_1_1_player_a86e6a8124c6a3951a3eb60e004a1711e}\label{classplayer_1_1_player_a86e6a8124c6a3951a3eb60e004a1711e} 
+\index{player.Player@{player.Player}!\_shoot@{\_shoot}}
+\index{\_shoot@{\_shoot}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{\_shoot()}{\_shoot()}}
+{\footnotesize\ttfamily player.\+Player.\+\_\+shoot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{speed\+\_\+upgrade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda generujaca pocisk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+upgrade} & ulepszenie szybkosci pocisku gracza ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classplayer_1_1_player_a5899e9d3587b441aae79c436d311ed59}\label{classplayer_1_1_player_a5899e9d3587b441aae79c436d311ed59} 
+\index{player.Player@{player.Player}!move@{move}}
+\index{move@{move}!player.Player@{player.Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily player.\+Player.\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Metoda zmieniajaca pozycje gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & przycisniety przycisk ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+player.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\begin{theindex}
+
+  \item {\_\_init\_\_}
+    \subitem {Beenvaders.Main}, \hyperpage{17}
+    \subitem {bullet.Bullet}, \hyperpage{7}
+    \subitem {display.Display}, \hyperpage{9}
+    \subitem {enemy.Basic\_drone}, \hyperpage{6}
+    \subitem {enemy.Queen}, \hyperpage{20}
+    \subitem {enemy.Wasp}, \hyperpage{25}
+    \subitem {level.Level}, \hyperpage{14}
+    \subitem {player.Player}, \hyperpage{18}
+    \subitem {save.Save}, \hyperpage{21}
+    \subitem {shop.Shop}, \hyperpage{23}
+  \item {\_collision\_detect}
+    \subitem {level.Level}, \hyperpage{15}
+  \item {\_generate\_level}
+    \subitem {level.Level}, \hyperpage{15}
+  \item {\_refresh\_upgrades}
+    \subitem {save.Save}, \hyperpage{22}
+  \item {\_shoot}
+    \subitem {player.Player}, \hyperpage{18}
+  \item {\_update\_cursor}
+    \subitem {display.Display}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Beenvaders.Main}, \hyperpage{16}
+    \subitem {\_\_init\_\_}, \hyperpage{17}
+  \item {bullet.Bullet}, \hyperpage{6}
+    \subitem {\_\_init\_\_}, \hyperpage{7}
+
+  \indexspace
+
+  \item {check\_cost}
+    \subitem {shop.Shop}, \hyperpage{23}
+
+  \indexspace
+
+  \item {display.Display}, \hyperpage{8}
+    \subitem {\_\_init\_\_}, \hyperpage{9}
+    \subitem {\_update\_cursor}, \hyperpage{9}
+    \subitem {level\_dis}, \hyperpage{10}
+    \subitem {level\_init\_dis}, \hyperpage{10}
+    \subitem {shop\_dis}, \hyperpage{10}
+    \subitem {show\_life}, \hyperpage{11}
+    \subitem {show\_score}, \hyperpage{11}
+    \subitem {update\_shop\_cursor}, \hyperpage{11}
+    \subitem {win\_mess}, \hyperpage{12}
+
+  \indexspace
+
+  \item {enemy.Basic\_drone}, \hyperpage{5}
+    \subitem {\_\_init\_\_}, \hyperpage{6}
+  \item {enemy.Enemy}, \hyperpage{12}
+    \subitem {move}, \hyperpage{13}
+  \item {enemy.Queen}, \hyperpage{19}
+    \subitem {\_\_init\_\_}, \hyperpage{20}
+  \item {enemy.Wasp}, \hyperpage{24}
+    \subitem {\_\_init\_\_}, \hyperpage{25}
+  \item {export\_save}
+    \subitem {save.Save}, \hyperpage{22}
+
+  \indexspace
+
+  \item {get\_score}
+    \subitem {save.Save}, \hyperpage{22}
+
+  \indexspace
+
+  \item {level.Level}, \hyperpage{13}
+    \subitem {\_\_init\_\_}, \hyperpage{14}
+    \subitem {\_collision\_detect}, \hyperpage{15}
+    \subitem {\_generate\_level}, \hyperpage{15}
+    \subitem {player\_move}, \hyperpage{15}
+    \subitem {update}, \hyperpage{15}
+  \item {level\_dis}
+    \subitem {display.Display}, \hyperpage{10}
+  \item {level\_init\_dis}
+    \subitem {display.Display}, \hyperpage{10}
+
+  \indexspace
+
+  \item {move}
+    \subitem {enemy.Enemy}, \hyperpage{13}
+    \subitem {player.Player}, \hyperpage{19}
+
+  \indexspace
+
+  \item {player.Player}, \hyperpage{17}
+    \subitem {\_\_init\_\_}, \hyperpage{18}
+    \subitem {\_shoot}, \hyperpage{18}
+    \subitem {move}, \hyperpage{19}
+  \item {player\_move}
+    \subitem {level.Level}, \hyperpage{15}
+  \item {purchase}
+    \subitem {shop.Shop}, \hyperpage{24}
+
+  \indexspace
+
+  \item {save.Save}, \hyperpage{21}
+    \subitem {\_\_init\_\_}, \hyperpage{21}
+    \subitem {\_refresh\_upgrades}, \hyperpage{22}
+    \subitem {export\_save}, \hyperpage{22}
+    \subitem {get\_score}, \hyperpage{22}
+  \item {shop.Shop}, \hyperpage{23}
+    \subitem {\_\_init\_\_}, \hyperpage{23}
+    \subitem {check\_cost}, \hyperpage{23}
+    \subitem {purchase}, \hyperpage{24}
+  \item {shop\_dis}
+    \subitem {display.Display}, \hyperpage{10}
+  \item {show\_life}
+    \subitem {display.Display}, \hyperpage{11}
+  \item {show\_score}
+    \subitem {display.Display}, \hyperpage{11}
+
+  \indexspace
+
+  \item {update}
+    \subitem {level.Level}, \hyperpage{15}
+  \item {update\_shop\_cursor}
+    \subitem {display.Display}, \hyperpage{11}
+
+  \indexspace
+
+  \item {win\_mess}
+    \subitem {display.Display}, \hyperpage{12}
+
+\end{theindex}

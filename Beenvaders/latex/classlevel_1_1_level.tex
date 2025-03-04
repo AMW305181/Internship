@@ -1,0 +1,178 @@
+\doxysection{level.\+Level Class Reference}
+\hypertarget{classlevel_1_1_level}{}\label{classlevel_1_1_level}\index{level.Level@{level.Level}}
+
+
+Klasa organizujaca gen3rowanie i dzialanie poziomow.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlevel_1_1_level_a096e3db09e8c689590c5c7c49cc31604}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, screen, score, upgrades, curr\+\_\+level)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\Hypertarget{classlevel_1_1_level_a11659188487b6f99ac94382e4afa8eb0}\label{classlevel_1_1_level_a11659188487b6f99ac94382e4afa8eb0} 
+{\bfseries generate\+\_\+enemies} (self)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca grupe przeciwnikow ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlevel_1_1_level_aae02a0b682ec79eae14a3d317844d758}{player\+\_\+move}} (self, attack=False, speed\+\_\+upgrade=0)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za ruch awatara gracza. \end{DoxyCompactList}\item 
+\Hypertarget{classlevel_1_1_level_ae91c37bdfb6294641eebae53370db73f}\label{classlevel_1_1_level_ae91c37bdfb6294641eebae53370db73f} 
+{\bfseries generate\+\_\+additionals} (self)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca na ekranie liczbe punktow zycia gracza i laczna liczbe zdobytych punktow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlevel_1_1_level_ae707f774fc5da94f826245341fd369ff}{update}} (self, point\+\_\+upgrade)
+\begin{DoxyCompactList}\small\item\em Metoda aktualizujaca stan poziomu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlevel_1_1_level_a26320462f5a2ecff198f9dbfb57222a4}\label{classlevel_1_1_level_a26320462f5a2ecff198f9dbfb57222a4} 
+{\bfseries screen}
+\item 
+\Hypertarget{classlevel_1_1_level_a7604cf9d82ba640a5210ab2fa07bf99c}\label{classlevel_1_1_level_a7604cf9d82ba640a5210ab2fa07bf99c} 
+{\bfseries player}
+\item 
+\Hypertarget{classlevel_1_1_level_a16f0c2d1f201c02f656eb55c944494f1}\label{classlevel_1_1_level_a16f0c2d1f201c02f656eb55c944494f1} 
+{\bfseries enemies}
+\item 
+\Hypertarget{classlevel_1_1_level_aa5379cc5d88a7bb454fddc415e89d57c}\label{classlevel_1_1_level_aa5379cc5d88a7bb454fddc415e89d57c} 
+{\bfseries display}
+\item 
+\Hypertarget{classlevel_1_1_level_ad2a0a39d086adbfece9c4a9d91edb93b}\label{classlevel_1_1_level_ad2a0a39d086adbfece9c4a9d91edb93b} 
+{\bfseries game\+\_\+over}
+\item 
+\Hypertarget{classlevel_1_1_level_aa69f6dbe425850dc3a6291fe562da491}\label{classlevel_1_1_level_aa69f6dbe425850dc3a6291fe562da491} 
+{\bfseries score}
+\item 
+\Hypertarget{classlevel_1_1_level_a8630921b3c7fa871fe1443030b5502c0}\label{classlevel_1_1_level_a8630921b3c7fa871fe1443030b5502c0} 
+{\bfseries curr\+\_\+level}
+\item 
+\Hypertarget{classlevel_1_1_level_acd75b71a6e36e279b1844c3d64bb02c6}\label{classlevel_1_1_level_acd75b71a6e36e279b1844c3d64bb02c6} 
+{\bfseries win}
+\item 
+\Hypertarget{classlevel_1_1_level_a89da63490d1cb7127a74cd482daef876}\label{classlevel_1_1_level_a89da63490d1cb7127a74cd482daef876} 
+{\bfseries loss}
+\item 
+\Hypertarget{classlevel_1_1_level_a7b5ec201b77b155da6b3728513e0e824}\label{classlevel_1_1_level_a7b5ec201b77b155da6b3728513e0e824} 
+{\bfseries enemy\+\_\+dir}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlevel_1_1_level_ae4ce4b7716d030c08af08cad83be651f}{\+\_\+generate\+\_\+level}} (self, health\+\_\+upgrade, cowboy, hawaii, queen)
+\begin{DoxyCompactList}\small\item\em Metoda generujaca gracza oraz przeciwnikow. \end{DoxyCompactList}\item 
+\Hypertarget{classlevel_1_1_level_aa8d334f11880e45d6e50697656c5777f}\label{classlevel_1_1_level_aa8d334f11880e45d6e50697656c5777f} 
+{\bfseries \+\_\+enemy\+\_\+move} (self)
+\begin{DoxyCompactList}\small\item\em Metoda kontrolujaca ruch grupy przeciwnikow. \end{DoxyCompactList}\item 
+\Hypertarget{classlevel_1_1_level_a9f89d03d2c0d257f275cb071208932de}\label{classlevel_1_1_level_a9f89d03d2c0d257f275cb071208932de} 
+{\bfseries \+\_\+enemy\+\_\+shoot} (self)
+\begin{DoxyCompactList}\small\item\em Metoda kontrolujaca wystrzelenie pocisku przez przeciwnikow ~\newline
+ \end{DoxyCompactList}\item 
+\Hypertarget{classlevel_1_1_level_a0cbaadcb958a6ec00a81a6b1d6227d00}\label{classlevel_1_1_level_a0cbaadcb958a6ec00a81a6b1d6227d00} 
+{\bfseries \+\_\+end\+\_\+check} (self)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzajaca czy zostaly spelnione warunki konca poziomu ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlevel_1_1_level_aef11593f0a25effebb34a165c3b94216}{\+\_\+collision\+\_\+detect}} (self, point\+\_\+upgrade)
+\begin{DoxyCompactList}\small\item\em Metoda kontrolujaca kolizje i jej konsekwencje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa organizujaca gen3rowanie i dzialanie poziomow. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlevel_1_1_level_a096e3db09e8c689590c5c7c49cc31604}\label{classlevel_1_1_level_a096e3db09e8c689590c5c7c49cc31604} 
+\index{level.Level@{level.Level}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!level.Level@{level.Level}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily level.\+Level.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{screen,  }\item[{}]{score,  }\item[{}]{upgrades,  }\item[{}]{curr\+\_\+level }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & ekran, na ktorym wyswietlane sa zmiany \\
+\hline
+{\em score} & zdobyte punkty param curr\+\_\+level poziom, ktory ma byc wygenerowany \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlevel_1_1_level_aef11593f0a25effebb34a165c3b94216}\label{classlevel_1_1_level_aef11593f0a25effebb34a165c3b94216} 
+\index{level.Level@{level.Level}!\_collision\_detect@{\_collision\_detect}}
+\index{\_collision\_detect@{\_collision\_detect}!level.Level@{level.Level}}
+\doxysubsubsection{\texorpdfstring{\_collision\_detect()}{\_collision\_detect()}}
+{\footnotesize\ttfamily level.\+Level.\+\_\+collision\+\_\+detect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{point\+\_\+upgrade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda kontrolujaca kolizje i jej konsekwencje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+upgrade} & dodatkowe punkty, ktore moze zdobyc gracz ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlevel_1_1_level_ae4ce4b7716d030c08af08cad83be651f}\label{classlevel_1_1_level_ae4ce4b7716d030c08af08cad83be651f} 
+\index{level.Level@{level.Level}!\_generate\_level@{\_generate\_level}}
+\index{\_generate\_level@{\_generate\_level}!level.Level@{level.Level}}
+\doxysubsubsection{\texorpdfstring{\_generate\_level()}{\_generate\_level()}}
+{\footnotesize\ttfamily level.\+Level.\+\_\+generate\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{health\+\_\+upgrade,  }\item[{}]{cowboy,  }\item[{}]{hawaii,  }\item[{}]{queen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda generujaca gracza oraz przeciwnikow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em health\+\_\+upgrade} & posiadane ulepszenie liczby punktow zycia przez gracza \\
+\hline
+{\em cowboy} & informacja czy kostium kowboja zostal zalozony \\
+\hline
+{\em hawaii} & informacja czy kostium wakacyjny zostal zalozony ~\newline
+ \\
+\hline
+{\em queen} & informacja czy kostium krolowej zostal zalozony ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlevel_1_1_level_aae02a0b682ec79eae14a3d317844d758}\label{classlevel_1_1_level_aae02a0b682ec79eae14a3d317844d758} 
+\index{level.Level@{level.Level}!player\_move@{player\_move}}
+\index{player\_move@{player\_move}!level.Level@{level.Level}}
+\doxysubsubsection{\texorpdfstring{player\_move()}{player\_move()}}
+{\footnotesize\ttfamily level.\+Level.\+player\+\_\+move (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{attack = {\ttfamily False},  }\item[{}]{speed\+\_\+upgrade = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Metoda odpowiadajaca za ruch awatara gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack} & informacja, czy zostal wcisniety przycisk strzalu \\
+\hline
+{\em speed\+\_\+upgrade} & ulepszenie szybkosci pocisku gracza ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlevel_1_1_level_ae707f774fc5da94f826245341fd369ff}\label{classlevel_1_1_level_ae707f774fc5da94f826245341fd369ff} 
+\index{level.Level@{level.Level}!update@{update}}
+\index{update@{update}!level.Level@{level.Level}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily level.\+Level.\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{point\+\_\+upgrade }\end{DoxyParamCaption})}
+
+
+
+Metoda aktualizujaca stan poziomu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+upgrade} & dodatkowe punkty, ktore moze zdobyc gracz ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+level.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\doxysection{save.\+Save Class Reference}
+\hypertarget{classsave_1_1_save}{}\label{classsave_1_1_save}\index{save.Save@{save.Save}}
+
+
+Klasa importujaca i eksportujaca plik zapisu, przechowuje i aktualizuje dane z zapisu, ktore przekazuje innym klasom.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsave_1_1_save_a650869852cc89d39605f68109f41cb06}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, path=Path.\+joinpath(Path.\+cwd(),\"{}assets\"{},\"{}save\+\_\+file.\+txt\"{}))
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsave_1_1_save_acfc026e4782b5ea2b5614823dc13d037}{get\+\_\+score}} (self)
+\begin{DoxyCompactList}\small\item\em Metoda zwracajaca przechowywana liczbe punktow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsave_1_1_save_ab6dca3631f84850d4a2a663811c2b087}{export\+\_\+save}} (self, path=Path.\+joinpath(Path.\+cwd(),\"{}assets\"{},\"{}save\+\_\+file.\+txt\"{}))
+\begin{DoxyCompactList}\small\item\em Metoda eksportujaca plik zapisu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsave_1_1_save_af0e83df417757c162e15703396d19f6b}\label{classsave_1_1_save_af0e83df417757c162e15703396d19f6b} 
+{\bfseries score}
+\item 
+\Hypertarget{classsave_1_1_save_a4d0b6097d2e93b9564d3d7c5798547a2}\label{classsave_1_1_save_a4d0b6097d2e93b9564d3d7c5798547a2} 
+{\bfseries upgrades}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsave_1_1_save_a180dbef9563fbd521eb3b9c493354c58}\label{classsave_1_1_save_a180dbef9563fbd521eb3b9c493354c58} 
+{\bfseries \+\_\+refresh\+\_\+score} (self, score)
+\begin{DoxyCompactList}\small\item\em Metoda odswiezajaca laczna liczbe punktow gracza po wyjsciu ze sklepu lub poziomu ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsave_1_1_save_a76389955be54457340c67c3d79b4971a}{\+\_\+refresh\+\_\+upgrades}} (self, upgrades)
+\begin{DoxyCompactList}\small\item\em Metoda odswiezajaca informacje o ulepszeniach gracza po wyjsciu ze sklepu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa importujaca i eksportujaca plik zapisu, przechowuje i aktualizuje dane z zapisu, ktore przekazuje innym klasom. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsave_1_1_save_a650869852cc89d39605f68109f41cb06}\label{classsave_1_1_save_a650869852cc89d39605f68109f41cb06} 
+\index{save.Save@{save.Save}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!save.Save@{save.Save}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily save.\+Save.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily Path.joinpath(Path.cwd(),\"{}assets\"{},\"{}save\+\_\+file.txt\"{})} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & domyslna sciezka do pliku zapisu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsave_1_1_save_a76389955be54457340c67c3d79b4971a}\label{classsave_1_1_save_a76389955be54457340c67c3d79b4971a} 
+\index{save.Save@{save.Save}!\_refresh\_upgrades@{\_refresh\_upgrades}}
+\index{\_refresh\_upgrades@{\_refresh\_upgrades}!save.Save@{save.Save}}
+\doxysubsubsection{\texorpdfstring{\_refresh\_upgrades()}{\_refresh\_upgrades()}}
+{\footnotesize\ttfamily save.\+Save.\+\_\+refresh\+\_\+upgrades (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{upgrades }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda odswiezajaca informacje o ulepszeniach gracza po wyjsciu ze sklepu. 
+
+\begin{DoxyReturn}{Returns}
+slownik posiadanych ulepszen 
+\end{DoxyReturn}
+\Hypertarget{classsave_1_1_save_ab6dca3631f84850d4a2a663811c2b087}\label{classsave_1_1_save_ab6dca3631f84850d4a2a663811c2b087} 
+\index{save.Save@{save.Save}!export\_save@{export\_save}}
+\index{export\_save@{export\_save}!save.Save@{save.Save}}
+\doxysubsubsection{\texorpdfstring{export\_save()}{export\_save()}}
+{\footnotesize\ttfamily save.\+Save.\+export\+\_\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path = {\ttfamily Path.joinpath(Path.cwd(),\"{}assets\"{},\"{}save\+\_\+file.txt\"{})} }\end{DoxyParamCaption})}
+
+
+
+Metoda eksportujaca plik zapisu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & domyslna scieka do pliku ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsave_1_1_save_acfc026e4782b5ea2b5614823dc13d037}\label{classsave_1_1_save_acfc026e4782b5ea2b5614823dc13d037} 
+\index{save.Save@{save.Save}!get\_score@{get\_score}}
+\index{get\_score@{get\_score}!save.Save@{save.Save}}
+\doxysubsubsection{\texorpdfstring{get\_score()}{get\_score()}}
+{\footnotesize\ttfamily save.\+Save.\+get\+\_\+score (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracajaca przechowywana liczbe punktow. 
+
+\begin{DoxyReturn}{Returns}
+laczna liczba punktow ~\newline
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+save.\+py\end{DoxyCompactItemize}

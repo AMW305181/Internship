@@ -1,0 +1,110 @@
+\doxysection{shop.\+Shop Class Reference}
+\hypertarget{classshop_1_1_shop}{}\label{classshop_1_1_shop}\index{shop.Shop@{shop.Shop}}
+
+
+Klasa odpowiadajaca za interakcje ze sklepem.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classshop_1_1_shop_ad60748f26fb27705c969cfccc49e0f2f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, purchased)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classshop_1_1_shop_a2ebf688830341c7181152bdd49e22873}{check\+\_\+cost}} (self, curr\+\_\+score, curr\+\_\+selection)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzajaca, czy gracza stac na dane ulepszenie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classshop_1_1_shop_ae89d5c482eaefffd7d339ee01bd075f3}{purchase}} (self, curr\+\_\+score, curr\+\_\+selection)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadajaca za zakup ulepszenia lub zalozenie kostiumu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classshop_1_1_shop_a598adf93602539bde4587725fa598581}\label{classshop_1_1_shop_a598adf93602539bde4587725fa598581} 
+{\bfseries items}
+\item 
+\Hypertarget{classshop_1_1_shop_aae2c98ffcfbb933565ba44577ce62214}\label{classshop_1_1_shop_aae2c98ffcfbb933565ba44577ce62214} 
+{\bfseries health\+\_\+cost}
+\item 
+\Hypertarget{classshop_1_1_shop_a4495d8e5b994a965721db2dfb7314b84}\label{classshop_1_1_shop_a4495d8e5b994a965721db2dfb7314b84} 
+{\bfseries speed\+\_\+cost}
+\item 
+\Hypertarget{classshop_1_1_shop_ab41e0d96a47d3ad0c08132247c1b63d9}\label{classshop_1_1_shop_ab41e0d96a47d3ad0c08132247c1b63d9} 
+{\bfseries point\+\_\+up\+\_\+cost}
+\item 
+\Hypertarget{classshop_1_1_shop_a910d737bacd112055af7bbe372d57348}\label{classshop_1_1_shop_a910d737bacd112055af7bbe372d57348} 
+{\bfseries cowboy\+\_\+cost}
+\item 
+\Hypertarget{classshop_1_1_shop_ada4dfb98b4ccb7770eb567f137ac43e8}\label{classshop_1_1_shop_ada4dfb98b4ccb7770eb567f137ac43e8} 
+{\bfseries hawaii\+\_\+cost}
+\item 
+\Hypertarget{classshop_1_1_shop_ac5786faf224d8794e5ab49d22af32910}\label{classshop_1_1_shop_ac5786faf224d8794e5ab49d22af32910} 
+{\bfseries queen\+\_\+cost}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiadajaca za interakcje ze sklepem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classshop_1_1_shop_ad60748f26fb27705c969cfccc49e0f2f}\label{classshop_1_1_shop_ad60748f26fb27705c969cfccc49e0f2f} 
+\index{shop.Shop@{shop.Shop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!shop.Shop@{shop.Shop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily shop.\+Shop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{purchased }\end{DoxyParamCaption})}
+
+
+
+Konstruktor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em purchased} & slownik posiadanych ulepszen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classshop_1_1_shop_a2ebf688830341c7181152bdd49e22873}\label{classshop_1_1_shop_a2ebf688830341c7181152bdd49e22873} 
+\index{shop.Shop@{shop.Shop}!check\_cost@{check\_cost}}
+\index{check\_cost@{check\_cost}!shop.Shop@{shop.Shop}}
+\doxysubsubsection{\texorpdfstring{check\_cost()}{check\_cost()}}
+{\footnotesize\ttfamily shop.\+Shop.\+check\+\_\+cost (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{curr\+\_\+score,  }\item[{}]{curr\+\_\+selection }\end{DoxyParamCaption})}
+
+
+
+Metoda sprawdzajaca, czy gracza stac na dane ulepszenie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+score} & posiadane srodki \\
+\hline
+{\em curr\+\_\+selection} & wybrane ulepszenie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+informacja, czy posiadane srodki sa wystarczajace na zakup ulepszenia ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{classshop_1_1_shop_ae89d5c482eaefffd7d339ee01bd075f3}\label{classshop_1_1_shop_ae89d5c482eaefffd7d339ee01bd075f3} 
+\index{shop.Shop@{shop.Shop}!purchase@{purchase}}
+\index{purchase@{purchase}!shop.Shop@{shop.Shop}}
+\doxysubsubsection{\texorpdfstring{purchase()}{purchase()}}
+{\footnotesize\ttfamily shop.\+Shop.\+purchase (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{curr\+\_\+score,  }\item[{}]{curr\+\_\+selection }\end{DoxyParamCaption})}
+
+
+
+Metoda odpowiadajaca za zakup ulepszenia lub zalozenie kostiumu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+score} & posiadane srodki \\
+\hline
+{\em curr\+\_\+selection} & wybrane ulepszenie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+curr\+\_\+score 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+shop.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}enemy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Basic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}drone Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{6}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}\_\_init\_\_()}{6}{subsubsection.3.1.2.1}%
+\contentsline {section}{\numberline {3.2}bullet.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bullet Class Reference}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{7}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}\_\_init\_\_()}{7}{subsubsection.3.2.2.1}%
+\contentsline {section}{\numberline {3.3}display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display Class Reference}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}\_\_init\_\_()}{9}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{9}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}\_update\_cursor()}{9}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}level\_dis()}{10}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}level\_init\_dis()}{10}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}shop\_dis()}{10}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}show\_life()}{11}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}show\_score()}{11}{subsubsection.3.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}update\_shop\_cursor()}{11}{subsubsection.3.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}win\_mess()}{12}{subsubsection.3.3.3.8}%
+\contentsline {section}{\numberline {3.4}enemy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Enemy Class Reference}{12}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{13}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Member Function Documentation}{13}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}move()}{13}{subsubsection.3.4.2.1}%
+\contentsline {section}{\numberline {3.5}level.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Level Class Reference}{13}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{14}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{14}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}\_\_init\_\_()}{14}{subsubsection.3.5.2.1}%
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{15}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}\_collision\_detect()}{15}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}\_generate\_level()}{15}{subsubsection.3.5.3.2}%
+\contentsline {subsubsection}{\numberline {3.5.3.3}player\_move()}{15}{subsubsection.3.5.3.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.4}update()}{16}{subsubsection.3.5.3.4}%
+\contentsline {section}{\numberline {3.6}Beenvaders.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main Class Reference}{16}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{17}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{17}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}\_\_init\_\_()}{17}{subsubsection.3.6.2.1}%
+\contentsline {section}{\numberline {3.7}player.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{17}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{18}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{18}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}\_\_init\_\_()}{18}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{18}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}\_shoot()}{18}{subsubsection.3.7.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.3.2}move()}{19}{subsubsection.3.7.3.2}%
+\contentsline {section}{\numberline {3.8}enemy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Queen Class Reference}{19}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{20}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{20}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}\_\_init\_\_()}{20}{subsubsection.3.8.2.1}%
+\contentsline {section}{\numberline {3.9}save.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Save Class Reference}{21}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{21}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Constructor \& Destructor Documentation}{21}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}\_\_init\_\_()}{21}{subsubsection.3.9.2.1}%
+\contentsline {subsection}{\numberline {3.9.3}Member Function Documentation}{22}{subsection.3.9.3}%
+\contentsline {subsubsection}{\numberline {3.9.3.1}\_refresh\_upgrades()}{22}{subsubsection.3.9.3.1}%
+\contentsline {subsubsection}{\numberline {3.9.3.2}export\_save()}{22}{subsubsection.3.9.3.2}%
+\contentsline {subsubsection}{\numberline {3.9.3.3}get\_score()}{22}{subsubsection.3.9.3.3}%
+\contentsline {section}{\numberline {3.10}shop.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shop Class Reference}{23}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{23}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Constructor \& Destructor Documentation}{23}{subsection.3.10.2}%
+\contentsline {subsubsection}{\numberline {3.10.2.1}\_\_init\_\_()}{23}{subsubsection.3.10.2.1}%
+\contentsline {subsection}{\numberline {3.10.3}Member Function Documentation}{23}{subsection.3.10.3}%
+\contentsline {subsubsection}{\numberline {3.10.3.1}check\_cost()}{23}{subsubsection.3.10.3.1}%
+\contentsline {subsubsection}{\numberline {3.10.3.2}purchase()}{24}{subsubsection.3.10.3.2}%
+\contentsline {section}{\numberline {3.11}enemy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wasp Class Reference}{24}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{25}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Constructor \& Destructor Documentation}{25}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}\_\_init\_\_()}{25}{subsubsection.3.11.2.1}%
+\contentsline {chapter}{Index}{27}{section*.47}%
