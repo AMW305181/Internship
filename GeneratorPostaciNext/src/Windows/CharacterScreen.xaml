@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeneratorPostaciNext.Windows.CharacterScreen"
+             xmlns:viewmodel="clr-namespace:GeneratorPostaciNext.ViewModel"
+             xmlns:mtc="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="viewmodel:CharacterScreenVM"
+             x:Name="charView"
+             Title="Postacie">
+    <ScrollView>
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0.3*" />
+            </Grid.ColumnDefinitions>
+            <!-- Column 0-->
+            <VerticalStackLayout Grid.Column="0" Padding="10" Spacing="30">
+                
+                <Label Text="Postać:" 
+                       />
+                <Label Text="Światy:"
+                    />
+                <Label Text="Płeć:"
+                     />
+                <Label Text="Seksualność:"
+                  />
+                <Label Text="Pokolenie:"
+                    />
+                <Label Text="Rok urodzenia:"
+                     />
+                <Label Text="Zapis imienia:"
+                     />
+                <Label Text="Obraz:"
+                    />
+                <Label Text="Ścieżka obrazu:"
+                 />
+                <Button x:Name="UpdateButton" Text="Zaktualizuj postacie" Clicked="UpdateButton_Clicked"
+                        />
+                <Button x:Name="DeleteButton" Text="Usuń postać"/>
+
+
+            </VerticalStackLayout>
+            <!-- Column 1-->
+            <VerticalStackLayout Grid.Column="1"  Spacing="5">
+                
+                <Picker x:Name="CharacterPicker" HeightRequest="42" ItemsSource="{Binding CharactersList}" SelectedIndex="0"
+                        SelectedIndexChanged="CharacterPicker_SelectedIndexChanged">
+                    
+                </Picker>
+                <!--  <mtc:Expander IsExpanded="{Binding IsOpened}" >
+                    <mtc:Expander.Header>
+                        <StackLayout Orientation="Horizontal" HeightRequest="42" Padding="10">
+                            <Label HorizontalOptions="Start" Text="{Binding SelectedText}"/>
+                            <Label Text="&#9660;" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </mtc:Expander.Header>
+                    <mtc:Expander.Content>
+                        <CollectionView ItemsSource="{Binding DataList}" HeightRequest="190" SelectionMode="Single" SelectionChangedCommand="{Binding SelectionCommand}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Text="{Binding }">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BindingContext.SelectedItem, Source={x:Reference charView}}"
+                                                                  CommandParameter="{Binding .}"
+                                                                  >
+                                                
+                                            </TapGestureRecognizer>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </mtc:Expander.Content>
+                </mtc:Expander> -->
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="World1Check"  />
+                    <Label Text="1"
+                           FontSize="30"
+                           />
+                    <CheckBox x:Name="World2Check"/>
+                    <Label Text="2"
+                     />
+                    <CheckBox x:Name="World3Check"/>
+                    <Label Text="3"
+                          />
+                    <CheckBox x:Name="World4Check"/>
+                    <Label Text="4"
+                        />
+                    <CheckBox x:Name="World5Check"/>
+                    <Label Text="5"
+                         />
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <RadioButton x:Name="GFButton" Content="Kobieta" GroupName="gender"  />
+                    <RadioButton x:Name="GMButton" Content="Mężczyzna" GroupName="gender"/>
+                    <RadioButton x:Name="GXButton" Content="Inna" GroupName="gender"/>
+                    
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <RadioButton x:Name="SAButton" Content="Ace" GroupName="sexuality" />
+                    <RadioButton x:Name="SHetButton" Content="Hetero" GroupName="sexuality"/>
+                    <RadioButton x:Name="SHoButton" Content="Homo" GroupName="sexuality"/>
+                    <RadioButton x:Name="SBButton" Content="Bi" GroupName="sexuality"/>
+                    <RadioButton x:Name="SPButton" Content="Pan" GroupName="sexuality"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <RadioButton x:Name="GenUButton" Content="Uniwersalne" GroupName="generation" />
+                    <RadioButton x:Name="GenEButton" Content="Starsze" GroupName="generation"/>
+                    <RadioButton x:Name="GenMButton" Content="Dojrzałe" GroupName="generation"/>
+                    <RadioButton x:Name="GenYButton" Content="Młode" GroupName="generation"/>
+                    <RadioButton x:Name="GenBButton" Content="Bejbik" GroupName="generation"/>
+                </HorizontalStackLayout>
+                <Entry x:Name="BirthEntry" MaxLength="4" Keyboard="Numeric" Text="{Binding BirthYear}"/>
+                <Entry x:Name="NameSpellingEntry"/>
+                <Button Text="Wybierz nowy obraz" 
+                    />
+                <Label/>
+                <Image/>
+
+
+            </VerticalStackLayout>
+            
+        
+    </Grid>
+    </ScrollView>
+</ContentPage>
