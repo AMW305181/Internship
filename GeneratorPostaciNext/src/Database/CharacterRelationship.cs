@@ -23,6 +23,6 @@ namespace GeneratorPostaciNext.Database
         [Required]
         public relationshipType type { get; set; }
 
-        bool isFamily { get; set; }
+        public bool isFamily { get; set; }
     }
 }

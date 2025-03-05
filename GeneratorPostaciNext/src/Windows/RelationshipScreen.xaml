@@ -6,11 +6,26 @@
              x:DataType="viewmodel:RelationshipScreenVM"
              x:Name="relView"
              Title="Relacje">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <HorizontalStackLayout Spacing="10" MaximumHeightRequest="10000">
+            <ListView x:Name="CharacterList" Header="Wybierz postać:"  ItemsSource="{Binding CharacterNames}" VerticalScrollBarVisibility="Always"
+                      SeparatorVisibility="Default" SeparatorColor="HotPink"
+                      ItemSelected="CharacterList_ItemSelected"
             />
+            <ListView x:Name="RelationshipsList" Header="Istniejące relacje:" ItemsSource="{Binding RelatedCharacters}"
+                      VerticalScrollBarVisibility="Always"
+                      SeparatorVisibility="Default" SeparatorColor="HotPink"/>
+
+        </HorizontalStackLayout>
+        <Label Text="Rodzaj relacji:" />
+        <HorizontalStackLayout>
+            <RadioButton x:Name="RSButton" Content="Partner" GroupName="RelationshipType"/>
+            <RadioButton x:Name="RPButton" Content="Rodzic" GroupName="RelationshipType"/>
+            <RadioButton x:Name="RCButton" Content="Dziecko" GroupName="RelationshipType"/>
+            <RadioButton x:Name="RSibButton" Content="Rodzeństwo" GroupName="RelationshipType"/>
+            <RadioButton x:Name="RFButton" Content="Inne - Rodzina" GroupName="RelationshipType"/>
+        </HorizontalStackLayout>
+        <Button Text="Aktualizuj relacje" MaximumWidthRequest="200" HorizontalOptions="Start"/>
+
     </VerticalStackLayout>
 </ContentPage>

@@ -14,17 +14,6 @@ namespace GeneratorPostaciNext
     {
         private static CharGenContext db = new CharGenContext();
 
-        public static async void testSelect()
-        {
-            List<int> worldList = new List<int>();
-            worldList.Add(1);
-            worldList.Add(2);
-            Character chara = new Character { name = "Yuuta", worlds = worldList, gender = Gender.M, generation = Generation.Young, sexuality = Sexuality.Bi };
-            db.Characters.Add(chara);
-            db.SaveChanges();
-
-        }
-
         public static bool AddCharacter(string name, List<int> worlds, Gender gender, Sexuality sexuality, Generation generation, int? birthYear = null)
         {
             try
@@ -84,5 +73,22 @@ namespace GeneratorPostaciNext
             }
             catch { return null; }
         }
+
+        public static List<string> SelectAllRelationships(string name)
+        {
+            try 
+            {
+                var relationships = db.CharacterRelationships.Where(r => r.character.name == name).Select(r=>r.relatedCharacter.name).ToList();
+                return relationships;
+            }
+            catch { return null; }
+        }
+
+        public static bool AddRelationship(string name)
+        {
+            try { return true; }
+            catch { return false; }
+        }
     }
+
 }
