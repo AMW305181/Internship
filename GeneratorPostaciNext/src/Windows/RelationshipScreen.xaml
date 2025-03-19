@@ -14,8 +14,13 @@
             />
             <ListView x:Name="RelationshipsList" Header="Istniejące relacje:" ItemsSource="{Binding RelatedCharacters}"
                       VerticalScrollBarVisibility="Always"
-                      SeparatorVisibility="Default" SeparatorColor="HotPink"/>
+                      SeparatorVisibility="Default" SeparatorColor="HotPink"
+                      ItemSelected="RelationshipsList_ItemSelected"/>
 
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label x:Name="NewRelationshipLabel" Text="Postać do nowej relacji:" IsVisible="False"/>
+            <Picker x:Name="NewRelationshipPicker" HeightRequest="42" ItemsSource="{Binding CharacterNames}" IsVisible="False"/>
         </HorizontalStackLayout>
         <Label Text="Rodzaj relacji:" />
         <HorizontalStackLayout>
@@ -25,7 +30,7 @@
             <RadioButton x:Name="RSibButton" Content="Rodzeństwo" GroupName="RelationshipType"/>
             <RadioButton x:Name="RFButton" Content="Inne - Rodzina" GroupName="RelationshipType"/>
         </HorizontalStackLayout>
-        <Button Text="Aktualizuj relacje" MaximumWidthRequest="200" HorizontalOptions="Start"/>
+        <Button x:Name="UpdateRelButton" Text="Aktualizuj relacje" MaximumWidthRequest="200" HorizontalOptions="Start" Clicked="UpdateRelButton_Clicked" />
 
     </VerticalStackLayout>
 </ContentPage>

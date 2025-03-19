@@ -11,7 +11,7 @@ namespace GeneratorPostaciNext.ViewModel
     public partial class CharacterScreenVM:ObservableObject
     {
         [ObservableProperty]
-        private List<string> charactersList;
+        ObservableCollection<string> charactersList;
 
         [ObservableProperty]
         string birthYear;
@@ -21,10 +21,16 @@ namespace GeneratorPostaciNext.ViewModel
 
         public CharacterScreenVM()
         {
-            charactersList = new List<string>();
-            charactersList.Add("Nowa postać");
+            charactersList = new ObservableCollection<string>();
+            CharactersList.Add("Nowa postać");
             List<string> existingCharas =DatabaseManager.SelectAllChars();
-            if (existingCharas != null) { charactersList.AddRange(existingCharas); }
+            if (existingCharas != null) 
+            {
+                foreach (string chara in existingCharas)
+                {
+                    CharactersList.Add(chara);
+                }
+            }
       
         }
         public bool AddCharacter(string name, List<int> worlds, Gender gender, Sexuality sexuality, Generation generation)

@@ -84,9 +84,49 @@ namespace GeneratorPostaciNext
             catch { return null; }
         }
 
-        public static bool AddRelationship(string name)
+        public static bool AddRelationship(string name, string relatedName, relationshipType type, bool isFamily)
         {
-            try { return true; }
+            try {
+                int charID = db.Characters.Where(c=>c.name==name).Select(c=>c.characterId).FirstOrDefault();
+                int relatedId=db.Characters.Where(c=>c.name==relatedName).Select(c=>c.characterId).FirstOrDefault();
+                CharacterRelationship relationship = new CharacterRelationship { characterId = charID, relatedCharacterId = relatedId, type = type, isFamily = isFamily };
+                db.CharacterRelationships.Add(relationship);
+                if (type==relationshipType.Parent)
+                { 
+                    CharacterRelationship relationshipReversed = new CharacterRelationship { characterId = relatedId, relatedCharacterId = charID, type = relationshipType.Child, isFamily = isFamily };
+                    db.CharacterRelationships.Add(relationshipReversed);    
+                }
+                else if(type==relationshipType.Child)
+                {
+                    CharacterRelationship relationshipReversed = new CharacterRelationship { characterId = relatedId, relatedCharacterId = charID, type = relationshipType.Parent, isFamily = isFamily };
+                    db.CharacterRelationships.Add(relationshipReversed);
+                }
+                else 
+                { 
+                    CharacterRelationship relationshipReversed = new CharacterRelationship { characterId = relatedId, relatedCharacterId = charID, type = type, isFamily = isFamily };
+                    db.CharacterRelationships.Add(relationshipReversed);  
+                }
+                db.SaveChanges();
+                return true; }
+            catch { return false; }
+        }
+
+        public static bool UpdateRelationship(string name, string relatedName, relationshipType type, bool isFamily)
+        {
+            try {
+                int charID = db.Characters.Where(c => c.name == name).Select(c => c.characterId).FirstOrDefault();
+                int relatedId = db.Characters.Where(c => c.name == relatedName).Select(c => c.characterId).FirstOrDefault();
+                CharacterRelationship relationship=db.CharacterRelationships.Where(r=>r.characterId == charID && r.relatedCharacterId==relatedId).FirstOrDefault();
+                CharacterRelationship relationshipReversed = db.CharacterRelationships.Where(r => r.characterId == relatedId && r.relatedCharacterId == charID).FirstOrDefault();
+                if (relationship == null) { return false; }
+                relationship.type= type;
+                relationship.isFamily= isFamily;
+                relationshipReversed.isFamily = isFamily;
+                if (type == relationshipType.Parent) { relationshipReversed.type = relationshipType.Child; }
+                else if (type == relationshipType.Child) { relationshipReversed.type = relationshipType.Parent; }
+                else { relationshipReversed.type = type; }
+                db.SaveChanges();
+                return true; }
             catch { return false; }
         }
     }

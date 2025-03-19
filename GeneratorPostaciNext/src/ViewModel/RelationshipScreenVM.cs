@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using GeneratorPostaciNext.Database;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,35 +13,56 @@ namespace GeneratorPostaciNext.ViewModel
     public partial class RelationshipScreenVM:ObservableObject
     {
         [ObservableProperty]
-        List<string> characterNames;
+        ObservableCollection<string> characterNames;
         [ObservableProperty]
-        List<string> relatedCharacters;
+        ObservableCollection<string> relatedCharacters;
 
         public RelationshipScreenVM()
         {
-            characterNames = new List<string>();
-            relatedCharacters = new List<string>();
+            characterNames = new ObservableCollection<string>();
+            relatedCharacters = new ObservableCollection<string>();
             List<string> existingCharas = DatabaseManager.SelectAllChars();
-            if (existingCharas != null) { characterNames.AddRange(existingCharas); }
-            relatedCharacters.Add("<Nowa relacja>");
+            if (existingCharas != null) 
+            { foreach (string chara in existingCharas)
+                {
+                    CharacterNames.Add(chara);
+                }
+             }
+            RelatedCharacters.Add("<Nowa relacja>");
         }
 
         public void SelectAllRelationships(string name)
         {
-            RelatedCharacters.RemoveRange(1, RelatedCharacters.Count);
-            List<string> relationships = DatabaseManager.SelectAllRelationships(name);
-            if (relationships != null) 
+            if (RelatedCharacters.Count > 1)
             {
-                RelatedCharacters.AddRange(relationships);
+                for (int i = 1; i < RelatedCharacters.Count; i++)
+                {
+                    RelatedCharacters.RemoveAt(RelatedCharacters.Count-i);
+                }
             }
+            List<string> relationships = DatabaseManager.SelectAllRelationships(name);
+            if (!relationships.IsNullOrEmpty())
+            {
+                foreach (string chara in relationships)
+                {
+                    RelatedCharacters.Add(chara);
+                }
+            }
+            int j = 0;
         }
 
-        public void AddRelationship(string name)
+        public bool AddRelationship(string name, string relatedName, relationshipType type, bool isFamily)
         {
-            bool success=DatabaseManager.AddRelationship(name);
+            bool success=DatabaseManager.AddRelationship(name, relatedName, type, isFamily);
             if (success)
-            { RelatedCharacters.Add(name); }
-           
+            { RelatedCharacters.Add(relatedName);}
+            return success;   
+        }
+
+        public bool UpdateRelationship(string name, string relatedName, relationshipType type, bool isFamily)
+        {
+            bool success = DatabaseManager.UpdateRelationship(name, relatedName, type, isFamily);
+            return success;
         }
     }
 }
